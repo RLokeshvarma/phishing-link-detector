@@ -59,16 +59,5 @@ This is a simple, responsive web application built using Next.js (frontend) and 
 
 ## Project Structure
 
-phishing-link-detector/
-├── pages/
-│ ├── index.js # Main UI component
-│ └── api/
-│ └── check.js # API route that uses checkPhishing.js
-├── utils/
-│ └── checkPhishing.js # Core logic to fetch link metadata
-├── styles/
-│ └── globals.css
-├── package.json 
-├── .gitignore 
-├── README.md
+<pre lang="markdown"> ## Project Structure ``` phishing-link-detector/ ├── pages/ │ ├── index.js # Main frontend UI │ └── api/ │ └── check.js # API route handler ├── utils/ │ └── checkPhishing.js # Core link preview logic ├── styles/ │ └── globals.css # Global styling ├── package.json # Project configuration and dependencies ├── .gitignore # Ignore node_modules, etc. ├── README.md # Project documentation ``` </pre>
 
