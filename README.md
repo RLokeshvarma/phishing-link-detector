@@ -1,40 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Phishing Link Detector
 
-## Getting Started
+This is a simple, responsive web application built using Next.js (frontend) and Node.js (backend) that detects and previews metadata about any URL entered by the user. It determines whether a given link is safe, suspicious, or unauthorized using link preview analysis.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Input any URL and get a preview with useful metadata
+- Shows link status: Valid, Suspicious, Unauthorized
+- Clean popup interface with optional image preview
+- Light and Dark mode toggle
+- Fully responsive layout
+- Built-in loader for better UX
+  
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| Technology    | Purpose                         |
+|---------------|----------------------------------|
+| **Next.js**   | Frontend & backend framework     |
+| **Node.js**   | Backend for API route handling   |
+| **link-preview-js** | Link metadata extraction  |
+| **JavaScript**| UI logic and interactivity       |
+| **HTML/CSS**  | Styling, layout, and animations  |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Run the Project Locally
 
-## Learn More
+1. Clone the repository
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/phishing-link-detector.git
+   cd phishing-link-detector
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+2. Install dependencies
+   ```bash
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  3. Run the development server
+     ```bash
+     npm run dev
 
-## Deploy on Vercel
+  4. Visit the application in your browser
+     ```arduino
+     http://localhost:3000
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Example Test URLs
+
+- Valid: https://openai.com
+- Suspicious: http://freemoney-now.fake-link.com
+- Invalid: https://invalid-site.test
+
+---
+
+## Project Structure
+
+phishing-link-detector/
+├── pages/
+│ ├── index.js # Main UI component
+│ └── api/
+│ └── check.js # API route that uses checkPhishing.js
+├── utils/
+│ └── checkPhishing.js # Core logic to fetch link metadata
+├── styles/
+│ └── globals.css
+├── package.json 
+├── .gitignore 
+├── README.md
+
