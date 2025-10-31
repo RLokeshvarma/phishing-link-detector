@@ -2,6 +2,8 @@
 
 This is a simple, responsive web application built using Next.js (frontend) and Node.js (backend) that detects and previews metadata about any URL entered by the user. It determines whether a given link is safe, suspicious, or unauthorized using link preview analysis.
 
+- **View Live Project:** [Link Analyzer](https://lokesh-phishing-link-analyzer.vercel.app/)
+
 ---
 
 ## Features
